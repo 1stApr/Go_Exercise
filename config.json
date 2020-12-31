@@ -3,7 +3,7 @@
 			"type": "a1.medium",
 			"vCPU": 1,
 	  		"vRam": 2,
-	  		"counts": 5
+	  		"counts": 500
 		},
 		{
 			"type": "a1.large",
