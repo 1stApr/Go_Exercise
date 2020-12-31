@@ -1,0 +1,21 @@
+{
+	"Instances": [{
+			"type": "a1.medium",
+			"vCPU": 1,
+	  		"vRam": 2,
+	  		"counts": 8
+		},
+		{
+			"type": "a1.large",
+			"vCPU": 2,
+	  		"vRam": 4,
+	  		"counts": 3
+		},
+		{
+			"type": "a1.xlarge",
+			"vCPU": 4,
+	  		"vRam": 8,
+	  		"counts": 15 
+		}
+	]
+}
