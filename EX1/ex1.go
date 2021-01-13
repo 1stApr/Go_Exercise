@@ -73,10 +73,10 @@ func printResult(oldInstance, newInstance *Instance) {
 		temp := newInstance.Instance[i].Counts - oldInstance.Instance[i].Counts
 		if temp >= 0 {
 			//fmt.Println("[\""+oldInstance.Instance[i].Type+"\"]"+" [provision] [", temp, "]")
-			fmt.Printf("[\"%-9v\"]	[%-9v] [%-1v]\n", oldInstance.Instance[i].Type, "provision", temp)
+			fmt.Printf("[\"%-9v\"]	[%-9v]	[%-1v]\n", oldInstance.Instance[i].Type, "provision", temp)
 		} else {
 			//fmt.Println("[\""+oldInstance.Instance[i].Type+"\"]"+" [delete] [", -temp, "]")
-			fmt.Printf("[\"%-9v\"]	[%-9v] [%-1v]\n", oldInstance.Instance[i].Type, "delete", -temp)
+			fmt.Printf("[\"%-9v\"]	[%-9v]	[%-1v]\n", oldInstance.Instance[i].Type, "delete", -temp)
 		}
 	}
 

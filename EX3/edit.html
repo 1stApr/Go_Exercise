@@ -1,0 +1,60 @@
+<head>
+    <style>
+    .center {
+      text-align: center;
+     
+    } 
+
+    * {
+        box-sizing: border-box;
+    }
+    .column {
+        float: left;    
+        width: 50%;
+        padding: 10px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    </style>
+</head>
+<body>
+    <h2>Two Equal Columns</h2>
+
+    <div class="row">
+        <div class="column" style="background-color:#aaa;">
+            <div class="center">
+                <h1>User1</h1>
+                <div><textarea name="body1" rows="20" cols="80">{{printf "%s" .Body1}}</textarea></div>
+                <form action="/save/test" method="POST">
+                    <div><textarea name="body" rows="5" cols="80"></textarea></div>
+                    <div><input type="submit" value="Save"></div>
+                </form>
+            </div>
+        </div>
+        <div class="column" style="background-color:#bbb;">
+            <div class="center">
+                <h1>User2</h1>
+                <div><textarea name="body3" rows="20" cols="80">{{printf "%s" .Body2}}</textarea></div>
+                <form action="/save/test2" method="POST">
+                    <div><textarea name="body2" rows="5" cols="80"></textarea></div>
+                    <div><input type="submit" value="Save"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+<!-- 
+    <div class="center">
+        <h1>Chat</h1>
+        <div><textarea name="body2" rows="20" cols="80">{{printf "%s" .Body}}</textarea></div>
+        <form action="/save/{{.Title}}" method="POST">
+            <div><textarea name="body" rows="5" cols="80"></textarea></div>
+            <div><input type="submit" value="Save"></div>
+        </form>
+    </div> -->
+
+</body>
